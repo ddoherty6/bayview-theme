@@ -9,10 +9,11 @@
         <meta name="viewport" content="width=device-width, intial-scale=1">
         <?php wp_head(); ?>
     </head>
-    <body <?php body_class(); ?>>
+    <body <?php //body_class(); ?>>
         <!-- ======= Header ======= -->
-        <header id="header" class="header fixed-top" data-scrollto-offset="0">
-            <div class="container-fluid d-flex align-items-center justify-content-between">
+        <header id="masthead" class="site-header" role="banner">
+
+			<div class="header-main">
 
             <?php
                 $custom_logo_id = get_theme_mod( 'custom_logo' );
@@ -29,71 +30,89 @@
                 }
 
             ?>
-            <nav id="navbar" class="navbar">
-                <?php
-                    if ( has_nav_menu( 'primary' ) ) :
-                        wp_nav_menu( [
-                            'theme_location' => 'primary',
-                            'container'      => false,
-                            'menu_class'     => '',
-                            'menu_id'        => '',
-                            'depth'          => 3
-                        ] );
-                    else :
-                        printf(
-                            '<a href="%1$s">%2$s</a>',
-                            esc_url( admin_url( '/nav-menus.php' ) ),
-                            esc_html__( 'Asign a menu', 'herobiz' )
-                        );
-                    endif;
-                ?>
-                <!-- <ul>
-                <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
-                <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
-                <li><a class="nav-link scrollto" href="index.html#services">Services</a></li>
-                <li><a class="nav-link scrollto" href="index.html#portfolio">Portfolio</a></li>
-                <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                    <ul>
-                    <li><a href="#">Drop Down 1</a></li>
-                    <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                        <ul>
-                        <li><a href="#">Deep Drop Down 1</a></li>
-                        <li><a href="#">Deep Drop Down 2</a></li>
-                        <li><a href="#">Deep Drop Down 3</a></li>
-                        <li><a href="#">Deep Drop Down 4</a></li>
-                        <li><a href="#">Deep Drop Down 5</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Drop Down 2</a></li>
-                    <li><a href="#">Drop Down 3</a></li>
-                    <li><a href="#">Drop Down 4</a></li>
-                    </ul>
-                </li>
-                <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
-                </ul> -->
-                <i class="bi bi-list mobile-nav-toggle d-none"></i>
-            </nav><!-- .navbar -->
 
-            <?php
-                if ( has_nav_menu( 'header_action' ) ) :
-                    wp_nav_menu( [
-                        'theme_location' => 'header_action',
-                        'container'      => false,
-                        'menu_class'     => 'header_menu_action',
-                        'menu_id'        => '',
-                        'depth'          => 3
-                    ] );
-                else :
-                    printf(
-                        '<a class="btn-getstarted scrollto" href="%1$s">%2$s</a>',
-                        esc_url( admin_url( '/nav-menus.php' ) ),
-                        esc_html__( 'Action Menu', 'herobiz' )
-                    );
-                endif;
-            ?>
+				<div id="header-images">
+					<!-- <div id="top-left-img">
+						<a href="./index.html" class="custom-logo-link" rel="home" aria-current="page"><img width="550" height="142" src="./wp-content/uploads/2015/08/mainbayview_logo_550x142.png" class="custom-logo" alt="Bayview Senior Services"></a>
+					</div> -->
+	
+					<div class="site-logo">
+						<a href="./index.html" class="custom-logo-link" rel="home" aria-current="page"><img width="550" height="142" src="./wp-content/uploads/2015/08/mainbayview_logo_550x142.png" class="custom-logo" alt="Bayview Senior Services"></a>
+					</div>
+	
+					<!-- <div id="top-right-img">
+						<a href="./index.html" class="custom-logo-link" rel="home" aria-current="page"><img width="550" height="142" src="./wp-content/uploads/2015/08/mainbayview_logo_550x142.png" class="custom-logo" alt="Bayview Senior Services"></a>
+					</div> -->
+				</div>
 
-            </div>
-        </header><!-- End Header -->
+				
+		
+				<!-- <div class="site-branding">
+					<p class="site-title"><a href="./index.html" rel="home">Bayview Senior Services</a></p>
+				</div> -->
+
+				<!-- .site-branding -->
+				<!-- <button class="primary-menu-toggle menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<svg class="icon icon-menu" aria-hidden="true" role="img"> <use xlink:href="./wp-content/themes/harrison/assets/icons/genericons-neue.svg#menu"></use> </svg><svg class="icon icon-close" aria-hidden="true" role="img"> <use xlink:href="./wp-content/themes/harrison/assets/icons/genericons-neue.svg#close"></use> </svg>		<span class="menu-toggle-text">Menu</span>
+				</button> -->
+	
+				<div class="primary-navigation">
+					
+					<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Primary Menu">
+                        <?php
+                            if ( has_nav_menu( 'primary' ) ) :
+                                wp_nav_menu( [
+                                    'theme_location' => 'primary',
+                                    'container'      => false,
+                                    'menu_class'     => '',
+                                    'menu_id'        => '',
+                                    'depth'          => 3
+                                ] );
+                            else :
+                                printf(
+                                    '<a href="%1$s">%2$s</a>',
+                                    esc_url( admin_url( '/nav-menus.php' ) ),
+                                    esc_html__( 'Asign a menu', 'herobiz' )
+                                );
+                            endif;
+                        ?>
+						<ul id="primary-menu" class="menu">
+							<li id="menu-item-3415" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3415"><a href="./index2.html">Blog</a></li>
+							<li id="menu-item-3444" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3444"><a href="./index2.html">Events</a></li>
+							<li id="menu-item-3403" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3403"><a href="./index2.html">Donate</a></li>
+							<li id="menu-item-3400" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3400"><a href="./index2.html">Volunteer</a></li>
+							<li id="menu-item-3390" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3390">
+								<a href="./index2.html">About Us<svg class="icon icon-expand" aria-hidden="true" role="img"> <use xlink:href="./wp-content/themes/harrison/assets/icons/genericons-neue.svg#expand"></use> </svg></a>
+							</li>
+							<li id="menu-item-3387" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3387">
+								<a href="./index2.html">Programs<svg class="icon icon-expand" aria-hidden="true" role="img"> <use xlink:href="./wp-content/themes/harrison/assets/icons/genericons-neue.svg#expand"></use> </svg></a>
+							</li>
+							<!-- <li id="menu-item-3406" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3406">
+								<a href="./housing-counseling/index.html">Housing<svg class="icon icon-expand" aria-hidden="true" role="img"> <use xlink:href="./wp-content/themes/harrison/assets/icons/genericons-neue.svg#expand"></use> </svg></a>
+							</li> -->
+							<!-- <li id="menu-item-3416" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3416"><a href="./art-for-aid/index.html">Art for Aid</a></li> -->
+							<li id="menu-item-3402" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3402"><a href="./index2.html">Watch Now</a></li>
+						</ul>
+					</nav>
+                    <?php
+                        if ( has_nav_menu( 'header_action' ) ) :
+                            wp_nav_menu( [
+                                'theme_location' => 'header_action',
+                                'container'      => false,
+                                'menu_class'     => 'header_menu_action',
+                                'menu_id'        => '',
+                                'depth'          => 3
+                            ] );
+                        else :
+                            printf(
+                                '<a class="btn-getstarted scrollto" href="%1$s">%2$s</a>',
+                                esc_url( admin_url( '/nav-menus.php' ) ),
+                                esc_html__( 'Action Menu', 'herobiz' )
+                            );
+                        endif;
+                    ?>
+				</div>
+			</div>
+		</header>
+       
 

@@ -1,2 +1,3 @@
-# herobiz-theme
-A theme for YouTube 
+# Bay View
+## WordPress Theme
+A theme for people-oriented businesses.
