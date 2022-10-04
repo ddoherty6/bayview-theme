@@ -85,6 +85,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # - Normalize
 --------------------------------------------------------------*/
+
+.testing {
+	color: red;
+}
+
 html {
 	box-sizing: border-box;
 	font-family: sans-serif;

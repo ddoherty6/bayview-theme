@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, intial-scale=1">
         <?php wp_head(); ?>
     </head>
-    <body <?php //body_class(); ?>>
+    <body <?php body_class(); ?>>
         <!-- ======= Header ======= -->
         <header id="masthead" class="site-header" role="banner">
 
@@ -60,21 +60,21 @@
 					
 					<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Primary Menu">
                         <?php
-                            if ( has_nav_menu( 'primary' ) ) :
-                                wp_nav_menu( [
-                                    'theme_location' => 'primary',
-                                    'container'      => false,
-                                    'menu_class'     => '',
-                                    'menu_id'        => '',
-                                    'depth'          => 3
-                                ] );
-                            else :
-                                printf(
-                                    '<a href="%1$s">%2$s</a>',
-                                    esc_url( admin_url( '/nav-menus.php' ) ),
-                                    esc_html__( 'Asign a menu', 'herobiz' )
-                                );
-                            endif;
+                            // if ( has_nav_menu( 'primary' ) ) :
+                            //     wp_nav_menu( [
+                            //         'theme_location' => 'primary',
+                            //         'container'      => false,
+                            //         'menu_class'     => '',
+                            //         'menu_id'        => '',
+                            //         'depth'          => 3
+                            //     ] );
+                            // else :
+                            //     printf(
+                            //         '<a href="%1$s">%2$s</a>',
+                            //         esc_url( admin_url( '/nav-menus.php' ) ),
+                            //         esc_html__( 'Asign a menu', 'herobiz' )
+                            //     );
+                            // endif;
                         ?>
 						<ul id="primary-menu" class="menu">
 							<li id="menu-item-3415" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3415"><a href="./index2.html">Blog</a></li>
@@ -95,21 +95,21 @@
 						</ul>
 					</nav>
                     <?php
-                        if ( has_nav_menu( 'header_action' ) ) :
-                            wp_nav_menu( [
-                                'theme_location' => 'header_action',
-                                'container'      => false,
-                                'menu_class'     => 'header_menu_action',
-                                'menu_id'        => '',
-                                'depth'          => 3
-                            ] );
-                        else :
-                            printf(
-                                '<a class="btn-getstarted scrollto" href="%1$s">%2$s</a>',
-                                esc_url( admin_url( '/nav-menus.php' ) ),
-                                esc_html__( 'Action Menu', 'herobiz' )
-                            );
-                        endif;
+                        // if ( has_nav_menu( 'header_action' ) ) :
+                        //     wp_nav_menu( [
+                        //         'theme_location' => 'header_action',
+                        //         'container'      => false,
+                        //         'menu_class'     => 'header_menu_action',
+                        //         'menu_id'        => '',
+                        //         'depth'          => 3
+                        //     ] );
+                        // else :
+                        //     printf(
+                        //         '<a class="btn-getstarted scrollto" href="%1$s">%2$s</a>',
+                        //         esc_url( admin_url( '/nav-menus.php' ) ),
+                        //         esc_html__( 'Action Menu', 'herobiz' )
+                        //     );
+                        // endif;
                     ?>
 				</div>
 			</div>
