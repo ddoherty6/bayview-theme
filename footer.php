@@ -90,4 +90,5 @@
     <div id="preloader"></div>
     <?php wp_footer(); ?>
 </body>
+</div>
 </html>
