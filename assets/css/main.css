@@ -392,7 +392,7 @@ big {
 
 body {
 	margin: 0;
-	background: #353535; /* Fallback for when there is no custom background color defined. */
+	background: var(--page-background-color); /* Fallback for when there is no custom background color defined. */
 }
 
 blockquote {
