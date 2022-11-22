@@ -5,7 +5,6 @@
 ?>
 
 <div class="sidebar">
-    <?php dynamic_sidebar( 'default-sidebar' ); ?>
-
-    What is up you absolute legends.
+    <!-- <?php dynamic_sidebar( 'default-sidebar' ); ?> -->
+    <?php get_calendar();?>
 </div>

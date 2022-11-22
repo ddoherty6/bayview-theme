@@ -49,24 +49,13 @@
 					</div> -->
 	
 					<div class="site-logo">
-                            <a href="./index.html" class="custom-logo-link" rel="home" aria-current="page"><img width="550" height="142" src=<?php echo get_header_image() ?> class="custom-logo" alt="Bayview Senior Services"/></a>
+                            <a href="./index.html" class="custom-logo-link" rel="home" aria-current="page"><img width="550" height="142" src=<?php echo get_header_image(); ?> class="custom-logo" alt="Bayview Senior Services"/></a>
                     </div>
 	
 					<!-- <div id="top-right-img">
 						<a href="./index.html" class="custom-logo-link" rel="home" aria-current="page"><img width="550" height="142" src="./wp-content/uploads/2015/08/mainbayview_logo_550x142.png" class="custom-logo" alt="Bayview Senior Services"></a>
 					</div> -->
 				</div>
-
-				
-		
-				<!-- <div class="site-branding">
-					<p class="site-title"><a href="./index.html" rel="home">Bayview Senior Services</a></p>
-				</div> -->
-
-				<!-- .site-branding -->
-				<!-- <button class="primary-menu-toggle menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-					<svg class="icon icon-menu" aria-hidden="true" role="img"> <use xlink:href="./wp-content/themes/harrison/assets/icons/genericons-neue.svg#menu"></use> </svg><svg class="icon icon-close" aria-hidden="true" role="img"> <use xlink:href="./wp-content/themes/harrison/assets/icons/genericons-neue.svg#close"></use> </svg>		<span class="menu-toggle-text">Menu</span>
-				</button> -->
 	
 				<div class="primary-navigation">
                         <?php

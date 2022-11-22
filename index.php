@@ -25,7 +25,8 @@ get_header();
             if ( have_posts() ) :
                 while ( have_posts() ) :
                     the_post();
-                    get_template_part( 'template-parts/post/content', get_post_format() );
+                    printf(get_post_format());
+                    //get_template_part( 'template-parts/post/content', get_post_format() );
                 endwhile;
 
                 echo paginate_links( [
@@ -42,7 +43,8 @@ get_header();
         <header class="page-header entry-header">
             <h2 class="page-title entry-title" style="text-align:center">EVENTS</h2>
         </header>
-        <?php get_sidebar(); ?>
+        <?php get_calendar(); ?>
+
     </div>
 </div>
 <?php
