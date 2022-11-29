@@ -21,22 +21,34 @@ get_header();
     </div>
     <div id="content" class="site-content">
         <main id="main" class="site-main" role="main">
-            <?php
-            if ( have_posts() ) :
-                while ( have_posts() ) :
-                    the_post();
-                    printf(get_post_format());
-                    //get_template_part( 'template-parts/post/content', get_post_format() );
-                endwhile;
+            <article id="post-49" class="page type-page status-publish hentry">
+                <header class="page-header entry-header">
+                    <h2 id="blog-title" class="page-title entry-title" style="text-align:center">
+                        NEWS
+                    </h2>
+                </header>
+                <div class="entry-content">
+                    <div class="wp-container-8 wp-block-query">
+                        <ul class="wp-container-7 is-flex-container wp-block-post-template">
+                            <?php
+                            if ( have_posts() ) :
+                                while ( have_posts() ) :
+                                    the_post();
+                                    get_template_part( 'template-parts/post/content', get_post_format() );
+                                endwhile;
 
-                echo paginate_links( [
-                    'prev_text' => esc_html__( 'Prev', 'herobiz' ),
-                    'next_text' => esc_html__( 'Next', 'herobiz' ),
-                ] );
-            else :
-                get_template_part( 'template-parts/page/content', 'none' );
-            endif;
-            ?>
+                                echo paginate_links( [
+                                    'prev_text' => esc_html__( 'Prev', 'herobiz' ),
+                                    'next_text' => esc_html__( 'Next', 'herobiz' ),
+                                ] );
+                            else :
+                                get_template_part( 'template-parts/page/content', 'none' );
+                            endif;
+                            ?>
+                        </ul>
+                    </div>
+                </div>
+            </article>
         </main>
     </div>
     <div id="events" class="site-content">
