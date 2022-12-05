@@ -506,7 +506,6 @@ tfoot td {
 }
 
 a {
-	color: #c9493b;
 	color: var(--link-color);
 	text-decoration: underline;
 	background-color: transparent;
@@ -515,8 +514,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-	color: #e36355;
-	color: var(--link-hover-color);
+	color: var(--header-text-hover-color);
 	text-decoration: none;
 }
 

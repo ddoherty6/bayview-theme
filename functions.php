@@ -3,7 +3,7 @@
  * Herobiz functions and definations.
  */
 
-if ( ! function_exists( 'herobiz_setup' ) ) {
+if ( ! function_exists( 'bayview_setup' ) ) {
     /**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -11,7 +11,7 @@ if ( ! function_exists( 'herobiz_setup' ) ) {
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-    function herobiz_setup() {
+    function bayview_setup() {
         /*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
@@ -87,15 +87,15 @@ if ( ! function_exists( 'herobiz_setup' ) ) {
 
         // This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'primary' => esc_html__( 'Primary', 'herobiz' ),
-            'footer' => esc_html__( 'Footer Menu', 'herobiz' ),
-            'header_action' => esc_html__( 'Header Action', 'herobiz' ),
+			'primary' => esc_html__( 'Primary Menu', 'header' ),
+            'footer' => esc_html__( 'Footer Menu', 'footer' ),
+            'services' => esc_html__( 'Left Side Menu', 'services' ),
 		) );
 
 		add_filter( 'show_admin_bar', '__return_false' );
     }
 }
-add_action( 'after_setup_theme', 'herobiz_setup' );
+add_action( 'after_setup_theme', 'bayview_setup' );
 
 
 /**

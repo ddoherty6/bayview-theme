@@ -2,7 +2,7 @@
 /**
  * Single page template.
  */
-echo get_post_format();
+//echo get_post_format();
 get_header();
 ?>
 <div id="primary" class="content-area">
@@ -19,7 +19,7 @@ get_header();
         endif;
         ?>
     </main>
-    <?php get_sidebar();  ?>
+    <?php //get_sidebar();  ?>
 </div>
 
 <?php
