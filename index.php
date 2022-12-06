@@ -5,22 +5,7 @@
 get_header();
 ?>
 <div id="float-div">
-    <!-- <div id="services" class="site-content col-12">
-        <header class="page-header entry-header">
-            <h2 class="page-title entry-title" style="text-align:center">SERVICES</h2>
-        </header>
-        <div class="widget">
-            <ul class="hello">
-                <li><a href="./index2.html">Adult Day Health Center</a></li>
-                <li><a href="./index2.html">Nutrition Program</a></li>
-                <li><a href="./index2.html">Senior Ex-Offender's Program</a></li>
-                <li><a href="./index2.html">Bayview Senior Connection</a></li>
-                <li><a href="./index2.html">Senior Centers</a></li>
-            </ul>
-        </div>		
-    </div> -->
-
-    <div id="services" class="site-content col-12">
+    <div id="services" class="site-content">
         <header class="page-header entry-header">
             <h2 class="page-title entry-title" style="text-align:center">SERVICES</h2>
         </header>
@@ -45,7 +30,7 @@ get_header();
         ?>	
     </div>
 
-    <div> <!-- Shadow div to stack tag-line div on top of content div -->
+    <div class="col-8"> <!-- Shadow div to stack tag-line div on top of content div -->
     <div id="tag-line" class="site-content">
         <h2 id="blog-title" class="page-title entry-title" style="text-align:center">
             Dignity, Honor, Respect
@@ -85,7 +70,7 @@ get_header();
         </main>
     </div>
     </div>
-    <div id="events" class="site-content col-12">
+    <div id="events" class="site-content">
         <header class="page-header entry-header">
             <h2 class="page-title entry-title" style="text-align:center">EVENTS</h2>
         </header>
