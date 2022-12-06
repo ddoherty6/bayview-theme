@@ -32,7 +32,7 @@
         
         // This time, let's throw in an event-specific
         // template tag to show the date after the title!
-        echo '<li><h4><a href="">' . $post->post_title . '</a></h4>';
+        echo '<li><h4><a href="' . $post->guid . '">' . $post->post_title . '</a></h4>';
         echo '<p>' . tribe_get_start_date( $post ) . '</p></li>';
         }
     
