@@ -1,1 +1,1 @@
-hi there
+<!-- /assets/template-parts/post/content-image -->

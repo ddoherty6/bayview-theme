@@ -3,7 +3,7 @@
  * Template part for displaying a message that posts cannot be found
  */
 ?>
-
+<!-- /assets/template-parts/page/content-none -->
 <section class="no-results not-found">
 	<header class="page-header">
 		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'herobiz' ); ?></h1>

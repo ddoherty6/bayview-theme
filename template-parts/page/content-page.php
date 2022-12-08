@@ -3,9 +3,8 @@
  * Template part to display page content in page.php.
  */
 ?>
+<!-- /assets/template-parts/page/content-page -->
 <article id="post-<?php the_ID(); ?>">
-    <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
     <?php
         /**
          * Page Thumbnail.
@@ -15,7 +14,8 @@
         endif;
     ?>
 
-    <div class="entry-content">
+    <div>
+        <h1 class="single-post-title"> <?php single_post_title(); ?> </h1>
         <?php
             the_content();
 
@@ -26,7 +26,7 @@
         ?>
     </div>
 
-    <?php if ( get_edit_post_link() ) : ?>
+    <!-- <?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">
 			<?php
 			edit_post_link(
@@ -46,6 +46,7 @@
 				'</span>'
 			);
 			?>
-		</footer><!-- .entry-footer -->
+		</footer> -->
+        <!-- .entry-footer -->
     <?php endif; ?>
 </article>

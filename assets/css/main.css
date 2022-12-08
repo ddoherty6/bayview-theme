@@ -323,9 +323,10 @@ h6 {
 	font-size: 1.1875rem;
 }
 
-p {
+/* p {
 	margin: 1.5em 0;
-}
+	padding-left: 1rem;
+} */
 
 dfn,
 cite,
@@ -740,8 +741,43 @@ textarea {
 }
 
 .site-content {
-	margin: 1.5rem 1.5rem 0;
+	margin: 1.5rem 1.5rem 0 1.5rem;
+	padding: 1% 1% 1% 1%;
 	border-radius: 25px;
+	background-color: #fdedcb;
+	text-align: center;
+	box-sizing: content-box;
+}
+
+.tribe-common-g-row {
+	border-radius: 25px;
+	background-color: #fdedcb;
+	box-sizing: border-box;
+}
+
+.site-content-page {
+	margin: 1.5rem 1.5rem 0 1.5rem;
+	padding: 1% 1% 1% 1%;
+	border-radius: 25px;
+	background-color: #fdedcb;
+	text-align: left;
+}
+
+.tribe-events-single {
+	padding: 1% 2% 1% 2%;
+	border-radius: 25px;
+	background-color: #fdedcb;
+}
+
+.single-post-title {
+	margin-bottom: 2%;
+	color: var(--link-color);
+	text-align: center;
+}
+
+.excerpt {
+	margin: 1.5rem 0;
+	padding-left: 1rem;
 }
 
 #tag-line {
@@ -1171,8 +1207,8 @@ body.site-description-hidden .site-header .site-description {
 .type-post,
 .type-page,
 .type-attachment {
-	margin: 0 0 1.5rem;
-	padding: 0;
+	margin: 0 0 0 0;
+	padding: 0 1rem 0 1rem;
 }
 
 .sticky {
@@ -3707,12 +3743,6 @@ figcaption,
 		padding-bottom: 1.5rem;
 	}
 
-	.site-content {
-		padding: 2rem 2rem 0;
-		background-color: #fdedcb;
-		text-align: center;
-	}
-
 	.page-footer {
 		margin-left: -2rem;
 		margin-right: -2rem;
@@ -3765,10 +3795,6 @@ figcaption,
 		padding-bottom: 2rem;
 	}
 
-	.site-content {
-		padding: 3rem 3rem 0;
-	}
-
 	.page-footer {
 		margin-left: -3rem;
 		margin-right: -3rem;
@@ -3806,10 +3832,6 @@ figcaption,
 	.header-main {
 		padding-top: 2.5rem;
 		padding-bottom: 2.5rem;
-	}
-
-	.site-content {
-		padding: 2rem 2rem 0;
 	}
 
 	.page-footer {
@@ -3857,10 +3879,6 @@ figcaption,
 	.header-main {
 		padding-top: 3rem;
 		padding-bottom: 3rem;
-	}
-
-	.site-content {
-		padding: 5rem 5rem 0;
 	}
 
 	.page-footer {

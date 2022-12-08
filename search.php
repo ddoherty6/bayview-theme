@@ -4,7 +4,7 @@
  */
 get_header();
 ?>
-
+<!-- /search -->
 <div id="primary" class="search-content-area">
     <main id="main" class="site-main">
         <?php

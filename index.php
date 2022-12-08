@@ -4,6 +4,7 @@
  */
 get_header();
 ?>
+<!-- /index -->
 <div id="float-div">
     <div id="services" class="site-content">
         <header class="page-header entry-header">
@@ -33,42 +34,27 @@ get_header();
     <div class="col-8"> <!-- Shadow div to stack tag-line div on top of content div -->
     <div id="tag-line" class="site-content">
         <h2 id="blog-title" class="page-title entry-title" style="text-align:center">
-            Dignity, Honor, Respect
+            Dignity. Honor. Respect.
         </h2>
     </div>
+        <ul id="content" class="site-content">
+            <?php
+            // Start the loop
+            if ( have_posts() ) :
+                while ( have_posts() ) :
+                    the_post();
+                    get_template_part( 'template-parts/post/content', get_post_format() );
+                endwhile;
 
-    <div id="content" class="site-content">
-        <main id="main" class="site-main" role="main">
-            <article id="post-49" class="page type-page status-publish hentry">
-                <!-- <header class="page-header entry-header">
-                    <h2 id="blog-title" class="page-title entry-title" style="text-align:center">
-                        NEWS
-                    </h2>
-                </header> -->
-                <div class="entry-content">
-                    <div class="wp-container-8 wp-block-query">
-                        <ul class="wp-container-7 is-flex-container wp-block-post-template">
-                            <?php
-                            if ( have_posts() ) :
-                                while ( have_posts() ) :
-                                    the_post();
-                                    get_template_part( 'template-parts/post/content', get_post_format() );
-                                endwhile;
-
-                                echo paginate_links( [
-                                    'prev_text' => esc_html__( 'Prev', 'herobiz' ),
-                                    'next_text' => esc_html__( 'Next', 'herobiz' ),
-                                ] );
-                            else :
-                                get_template_part( 'template-parts/page/content', 'none' );
-                            endif;
-                            ?>
-                        </ul>
-                    </div>
-                </div>
-            </article>
-        </main>
-    </div>
+                echo paginate_links( [
+                    'prev_text' => esc_html__( 'Prev', 'Bayview' ),
+                    'next_text' => esc_html__( 'Next', 'Bayview' ),
+                ] );
+            else :
+                get_template_part( 'template-parts/page/content', 'none' );
+            endif;
+            ?>
+        </ul>
     </div>
     <div id="events" class="site-content">
         <header class="page-header entry-header">

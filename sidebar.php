@@ -3,7 +3,7 @@
  * Template for sidebar.php
  */
 ?>
-
+<!-- /sidebar -->
 <div id="calendar" class="">
     <!-- <?php dynamic_sidebar( 'default-sidebar' ); ?> -->
     <ul>

@@ -5,6 +5,7 @@
 //echo get_post_format();
 get_header();
 ?>
+<!-- /single -->
 <div id="primary" class="content-area">
     <main id="main" class="site-main">
         <?php

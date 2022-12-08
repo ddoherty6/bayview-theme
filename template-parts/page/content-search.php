@@ -3,6 +3,7 @@
  * Template part for display search results.
  */
 ?>
+<!-- /assets/template-parts/page/content-search -->
 <article id="post-<?php the_ID(); ?>">
 	<header class="entry-header">
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>

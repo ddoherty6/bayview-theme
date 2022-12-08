@@ -743,10 +743,6 @@ textarea {
 	font-weight: bold;
 }
 
-.site-content {
-	margin: 1.5rem 1.5rem 0;
-}
-
 #content {
 	width: 1200px;
 	margin-left: 1%;
@@ -3707,12 +3703,6 @@ figcaption,
 		padding-bottom: 1.5rem;
 	}
 
-	.site-content {
-		padding: 2rem 2rem 0;
-		background-color: #fdedcb;
-		text-align: center;
-	}
-
 	.page-footer {
 		margin-left: -2rem;
 		margin-right: -2rem;
@@ -3765,10 +3755,6 @@ figcaption,
 		padding-bottom: 2rem;
 	}
 
-	.site-content {
-		padding: 3rem 3rem 0;
-	}
-
 	.page-footer {
 		margin-left: -3rem;
 		margin-right: -3rem;
@@ -3806,10 +3792,6 @@ figcaption,
 	.header-main {
 		padding-top: 2.5rem;
 		padding-bottom: 2.5rem;
-	}
-
-	.site-content {
-		padding: 2rem 2rem 0;
 	}
 
 	.page-footer {
