@@ -19,21 +19,20 @@
  */
 
 // ** Database settings - You can get this info from your web host ** //
-
-if(isset($_ENV[`CLEARDB_DATABASE_URL`])) {
-	$db = parse_url($_ENV[`CLEARDB_DATABASE_URL`]);
+if(isset($_ENV['CLEARDB_DATABASE_URL'])) {
+	$db = parse_url($_ENV['CLEARDB_DATABASE_URL']);
 	
 	/** The name of the database for WordPress */
-	define( 'DB_NAME', trim($db[`path`], `/`) );
+	define( 'DB_NAME', trim($db['path'], '/') );
 
 	/** Database username */
-	define( 'DB_USER', $db[`user`] );
+	define( 'DB_USER', $db['user'] );
 
 	/** Database password */
-	define( 'DB_PASSWORD', $db[`pass`] );
+	define( 'DB_PASSWORD', $db['pass'] );
 
 	/** Database hostname */
-	define( 'DB_HOST', $db[`host`] );
+	define( 'DB_HOST', $db['host'] );
 
 	/** Database charset to use in creating database tables. */
 	define( 'DB_CHARSET', 'utf8' );
