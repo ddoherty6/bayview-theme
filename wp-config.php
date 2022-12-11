@@ -98,10 +98,13 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
+$pk = getenv('AWS_PUBLIC_KEY');
+$sk = getenv('AWS_SECRET_KEY');
+
 define( 'AS3CF_SETTINGS', serialize( array(
     'provider' => 'aws',
-    'access-key-id' => $_ENV['AWS_PUBLIC_KEY'],
-    'secret-access-key' => $_ENV['AWS_SECRET_KEY'],
+    'access-key-id' => $pk,
+    'secret-access-key' => $sk,
 ) ) );
 
 
