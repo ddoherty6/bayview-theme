@@ -74,6 +74,11 @@ define( 'NONCE_SALT',       'put your unique phrase here' );
 
 /**#@-*/
 
+define( 'AS3CF_SETTINGS', serialize( array(
+	'provider' => 'aws',
+	'use-server-roles' => 'true',
+	) ) );
+
 /**
  * WordPress database table prefix.
  *
