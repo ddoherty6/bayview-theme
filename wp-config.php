@@ -74,10 +74,17 @@ define( 'NONCE_SALT',       'put your unique phrase here' );
 
 /**#@-*/
 
+// define( 'AS3CF_SETTINGS', serialize( array(
+// 	'provider' => 'aws',
+// 	'use-server-roles' => 'true',
+// 	) ) );
+
 define( 'AS3CF_SETTINGS', serialize( array(
 	'provider' => 'aws',
-	'use-server-roles' => 'true',
-	) ) );
+	'access-key-id' => ' AKIATIOGVQFVGI7CML7A',
+	'secret-access-key' => ' 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',
+) ) );
+	
 
 /**
  * WordPress database table prefix.
