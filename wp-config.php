@@ -18,9 +18,6 @@
  * @package WordPress
  */
 
-<<<<<<< HEAD
-// ** Database settings - You can get this info from your web host ** //
-=======
 // ** Database settings - You can get this info from your web host ** // AWS
 
 define( 'AS3CF_SETTINGS', serialize( array(
@@ -28,10 +25,8 @@ define( 'AS3CF_SETTINGS', serialize( array(
 	'use-server-roles' => true,
 )));
 
-
 // ** Database settings - You can get this info from your web host ** // clearDB (mySQL) on Heroku
 
->>>>>>> develop
 if(isset($_ENV['CLEARDB_DATABASE_URL'])) {
 	$db = parse_url($_ENV['CLEARDB_DATABASE_URL']);
 	
