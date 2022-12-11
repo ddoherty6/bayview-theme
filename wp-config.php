@@ -81,8 +81,8 @@ define( 'NONCE_SALT',       'put your unique phrase here' );
 
 define( 'AS3CF_SETTINGS', serialize( array(
 	'provider' => 'aws',
-	'access-key-id' => ' AKIATIOGVQFVGI7CML7A',
-	'secret-access-key' => ' xlGNycZFLX3UQt5J0uJNbaswh1eVLcMKDUi53ljJ',
+	'access-key-id' => 'AKIATIOGVQFVGI7CML7A',
+	'secret-access-key' => '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',
 ) ) );
 	
 
