@@ -74,11 +74,6 @@ define( 'NONCE_SALT',       'put your unique phrase here' );
 
 /**#@-*/
 
-define( 'AS3CF_SETTINGS', serialize( array(
-	'provider' => 'aws',
-	'use-server-roles' => 'true',
-) ) );
-
 /**
  * WordPress database table prefix.
  *
@@ -103,6 +98,11 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
+define( 'AS3CF_SETTINGS', serialize( array(
+    'provider' => 'aws',
+    'access-key-id' => $_ENV['AWS_PUBLIC_KEY'],
+    'secret-access-key' => $_ENV['AWS_SECRET_KEY'],
+) ) );
 
 
 /* That's all, stop editing! Happy publishing. */
