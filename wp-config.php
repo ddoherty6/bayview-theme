@@ -20,10 +20,10 @@
 
 // ** Database settings - You can get this info from your web host ** // AWS
 
-define( 'AS3CF_SETTINGS', serialize( array(
-	'provider' => 'aws',
-	'use-server-roles' => true,
-)));
+// define( 'AS3CF_SETTINGS', serialize( array(
+// 	'provider' => 'aws',
+// 	'use-server-roles' => true,
+// )));
 
 // ** Database settings - You can get this info from your web host ** // clearDB (mySQL) on Heroku
 
